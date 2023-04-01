@@ -42,7 +42,6 @@ namespace A02 {
         let target = _event.target;
         let position: string = "X-Koordinate: " + x + "<br>" + "Y-Koordinate: " + y + "<br>" + "Target: " + target;
         span.innerHTML = position;
-        //span.style.position = "fixed";
         span.style.top = `${y1}px`;
         span.style.left = `${x1}px`;
     }
