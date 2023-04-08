@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,28 +9,62 @@
     <link href="style.css" type="text/css" rel="stylesheet" />
     <title>Aufgabenliste</title>
 </head>
+
 <body>
     <h1>Aufgabenliste</h1>
 
-    <div id="task1">
-        <input type="text" id="person" placeholder="Person" class="field">
+    <div id="task">
+        <select name="selectmenu" id="person" class="field">
+            <option value="person1">Leon</option>
+            <option value="person2">Jochen</option>
+            <option value="person3">Lenny</option>
+        </select>
+
         <input type="text" id="aufg" placeholder="Aufgabe" class="field">
-        <input type="text" id="date" placeholder="Datum/Zeit" class="field">
+        <input type="text" id="comment" placeholder="Kommentar" class="field">
+        <input type="date" id="date" class="field" />
+
         <select name="selectmenu" id="status" class="field">
             <option value="option1">Nicht bearbeitet</option>
             <option value="option2">In Bearbeitung</option>
             <option value="option3">Fertig</option>
         </select>
+
+        <input type="button" id="btnCreate" value="Aufgabe hinzufügen" onClick="create()" class="field">
         <input type="button" id="btnDelete" value="Löschen" onClick="löschen()" class="field">
     </div>
 
-    <div id="task2">
-        <input type="text" id="comment" placeholder="Kommentar" class="field">
-        <input type="button" id="btnCreate" value="Aufgabe hinzufügen" onClick="create()" class="field">
+    <div id="todo">
+        <div class="task">
+            <span>Jochen</span>
+            <span>Küche putzen</span>
+            <span>Auch den Ofen putzen</span>
+            <span>10.04.2023</span>
+            <select name="selectmenu" id="status" class="field">
+                <option value="option1">Nicht bearbeitet</option>
+                <option value="option2">In Bearbeitung</option>
+                <option value="option3">Fertig</option>
+            </select>
+            <input type="button" id="btnDelete" value="Löschen" onClick="löschen()" class="field">
+        </div>
+
+        <div class="task">
+            <span>Leon</span>
+            <span>Einkauf</span>
+            <span>Einkauf für Burger Abend</span>
+            <span>06.04.2023</span>
+            <select name="selectmenu" id="status" class="field">
+                <option value="option1">Nicht bearbeitet</option>
+                <option value="option2">In Bearbeitung</option>
+                <option value="option3">Fertig</option>
+            </select>
+            <input type="button" id="btnDelete" value="Löschen" onClick="löschen()" class="field">
+        </div>
     </div>
-    
-   
+
+
 
 
 </body>
+
 </html>
