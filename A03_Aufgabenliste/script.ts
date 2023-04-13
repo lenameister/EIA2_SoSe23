@@ -7,19 +7,18 @@ namespace A03 {
     */
 }
 
-window.addEventListener("load", handleload);
-function handleload(_event: Event): void {
+window.addEventListener("load", handleLoad);
+function handleLoad(_event: Event): void {
+
+    document.querySelector('#btnCreate')!.addEventListener ('click', create);
+    function create() {
+        console.log("Aufgabe hinzugfügen!");
+    }
+
+    document.querySelector('#btnDelete')!.addEventListener ('click', löschen);
+    function löschen() {
+        console.log("Aufgabe hinzugfügen!");
+    }
 
 }
 
-document.querySelector("#btnCreate")!.addEventListener('click', function create() {
-
-    console.log("Aufgabe hinzufügen!");
-
-})
-
-document.querySelector("#btnDelete")!.addEventListener('click', function () {
-
-    console.log("Eintrag löschen!");
-
-})
