@@ -10,16 +10,20 @@ namespace A04 {
 window.addEventListener("load", handleload);
 function handleload(_event: Event): void {
 
+    function create(): void {
+        console.log("Aufgabe hinzugfügen!");
+    }
+    document.querySelector('#btnCreate')!.addEventListener ('click', create);
+
+    
+    function deleteTask(): void {
+        console.log("Aufgabe hinzugfügen!");
+    }
+    document.querySelector('#btnDelete')!.addEventListener ('click', deleteTask);
+
+
 }
 
-document.querySelector("#btnCreate")!.addEventListener('click', function create() {
 
-    console.log("Aufgabe hinzufügen!");
 
-})
 
-document.querySelector("#btnDelete")!.addEventListener('click', function () {
-
-    console.log("Eintrag löschen!");
-
-})
